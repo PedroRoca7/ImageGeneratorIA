@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var generatedImageView: UIImageView!
     @IBOutlet weak var descriptionImageTextField: UITextField!
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        descriptionImageTextField.delegate = self
         loadingActivity.isHidden = true
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -46,7 +47,10 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        descriptionImageTextField.resignFirstResponder()
+        return true
+    }
     // Método chamado quando o teclado está prestes a desaparecer
     @objc func keyboardWillHide(notification: NSNotification) {
         // Restaure a constante de constraint vertical inferior para o valor original
