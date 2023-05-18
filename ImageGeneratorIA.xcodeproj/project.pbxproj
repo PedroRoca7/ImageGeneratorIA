@@ -16,6 +16,8 @@
 		CEC8A1832A16645F00B82A88 /* ImageGeneratorIATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1822A16645F00B82A88 /* ImageGeneratorIATests.swift */; };
 		CEC8A18D2A16645F00B82A88 /* ImageGeneratorIAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A18C2A16645F00B82A88 /* ImageGeneratorIAUITests.swift */; };
 		CEC8A18F2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */; };
+		CEC8A1A02A16670A00B82A88 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A19F2A16670A00B82A88 /* API.swift */; };
+		CEC8A1A22A16674300B82A88 /* GeneratorImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CEC8A1882A16645F00B82A88 /* ImageGeneratorIAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorIAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8A18C2A16645F00B82A88 /* ImageGeneratorIAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorIAUITests.swift; sourceTree = "<group>"; };
 		CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEC8A19F2A16670A00B82A88 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,13 @@
 		CEC8A16A2A16645B00B82A88 /* ImageGeneratorIA */ = {
 			isa = PBXGroup;
 			children = (
-				CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */,
-				CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */,
-				CEC8A16F2A16645B00B82A88 /* ViewController.swift */,
+				CEC8A19E2A1666F800B82A88 /* Services */,
+				CEC8A19D2A1666F000B82A88 /* ViewModel */,
+				CEC8A19C2A1666CE00B82A88 /* Controllers */,
+				CEC8A19B2A1666C100B82A88 /* Delegates */,
 				CEC8A1712A16645B00B82A88 /* Main.storyboard */,
-				CEC8A1742A16645F00B82A88 /* Assets.xcassets */,
 				CEC8A1762A16645F00B82A88 /* LaunchScreen.storyboard */,
+				CEC8A1742A16645F00B82A88 /* Assets.xcassets */,
 				CEC8A1792A16645F00B82A88 /* Info.plist */,
 			);
 			path = ImageGeneratorIA;
@@ -125,6 +130,39 @@
 				CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */,
 			);
 			path = ImageGeneratorIAUITests;
+			sourceTree = "<group>";
+		};
+		CEC8A19B2A1666C100B82A88 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */,
+				CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CEC8A19C2A1666CE00B82A88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8A16F2A16645B00B82A88 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEC8A19D2A1666F000B82A88 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC8A19E2A1666F800B82A88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8A19F2A16670A00B82A88 /* API.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +298,9 @@
 			files = (
 				CEC8A1702A16645B00B82A88 /* ViewController.swift in Sources */,
 				CEC8A16C2A16645B00B82A88 /* AppDelegate.swift in Sources */,
+				CEC8A1A02A16670A00B82A88 /* API.swift in Sources */,
 				CEC8A16E2A16645B00B82A88 /* SceneDelegate.swift in Sources */,
+				CEC8A1A22A16674300B82A88 /* GeneratorImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +483,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +512,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
