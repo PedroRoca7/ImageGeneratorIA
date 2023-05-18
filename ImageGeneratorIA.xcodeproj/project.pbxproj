@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBA433382BDB9A194A7CF8E /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C62096357B780D37EF3A3 /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework */; };
+		CE48D2DB4ED7D33EA48087F4 /* Pods_ImageGeneratorIATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7A4819BF045468AD5DD4C2 /* Pods_ImageGeneratorIATests.framework */; };
 		CEC8A16C2A16645B00B82A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */; };
 		CEC8A16E2A16645B00B82A88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */; };
 		CEC8A1702A16645B00B82A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16F2A16645B00B82A88 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 		CEC8A18F2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */; };
 		CEC8A1A02A16670A00B82A88 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A19F2A16670A00B82A88 /* API.swift */; };
 		CEC8A1A22A16674300B82A88 /* GeneratorImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */; };
+		CEC8A1A52A16732700B82A88 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEC8A1A42A16732700B82A88 /* OpenAISwift */; };
+		FD5974EAD433ADFF1AAFC631 /* Pods_ImageGeneratorIA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D02C503A08B2F9A8D752B39 /* Pods-ImageGeneratorIATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIATests.release.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIATests/Pods-ImageGeneratorIATests.release.xcconfig"; sourceTree = "<group>"; };
+		3BA6309C815883E1517EBDCA /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIA-ImageGeneratorIAUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47266EC25FC1240BA2AE6747 /* Pods-ImageGeneratorIATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIATests.debug.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIATests/Pods-ImageGeneratorIATests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7A4819BF045468AD5DD4C2 /* Pods_ImageGeneratorIATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGeneratorIATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639735B010B4DA306AA0F852 /* Pods-ImageGeneratorIA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIA.release.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIA/Pods-ImageGeneratorIA.release.xcconfig"; sourceTree = "<group>"; };
+		7C518651828883EA1BCE0F6C /* Pods-ImageGeneratorIA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIA.debug.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIA/Pods-ImageGeneratorIA.debug.xcconfig"; sourceTree = "<group>"; };
+		853C62096357B780D37EF3A3 /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F75173EEC9AF56CE5737BE9 /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGeneratorIA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8A1682A16645B00B82A88 /* ImageGeneratorIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGeneratorIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC8A1A52A16732700B82A88 /* OpenAISwift in Frameworks */,
+				FD5974EAD433ADFF1AAFC631 /* Pods_ImageGeneratorIA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE48D2DB4ED7D33EA48087F4 /* Pods_ImageGeneratorIATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBA433382BDB9A194A7CF8E /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B33C4730C9F73EF24BC25E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C518651828883EA1BCE0F6C /* Pods-ImageGeneratorIA.debug.xcconfig */,
+				639735B010B4DA306AA0F852 /* Pods-ImageGeneratorIA.release.xcconfig */,
+				3BA6309C815883E1517EBDCA /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.debug.xcconfig */,
+				8F75173EEC9AF56CE5737BE9 /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig */,
+				47266EC25FC1240BA2AE6747 /* Pods-ImageGeneratorIATests.debug.xcconfig */,
+				2D02C503A08B2F9A8D752B39 /* Pods-ImageGeneratorIATests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		27DACB086A2986B84959B327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */,
+				853C62096357B780D37EF3A3 /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework */,
+				4A7A4819BF045468AD5DD4C2 /* Pods_ImageGeneratorIATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEC8A15F2A16645B00B82A88 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +128,8 @@
 				CEC8A1812A16645F00B82A88 /* ImageGeneratorIATests */,
 				CEC8A18B2A16645F00B82A88 /* ImageGeneratorIAUITests */,
 				CEC8A1692A16645B00B82A88 /* Products */,
+				18B33C4730C9F73EF24BC25E /* Pods */,
+				27DACB086A2986B84959B327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,15 +215,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC8A1922A16645F00B82A88 /* Build configuration list for PBXNativeTarget "ImageGeneratorIA" */;
 			buildPhases = (
+				C0218C4AE5F36F8105155779 /* [CP] Check Pods Manifest.lock */,
 				CEC8A1642A16645B00B82A88 /* Sources */,
 				CEC8A1652A16645B00B82A88 /* Frameworks */,
 				CEC8A1662A16645B00B82A88 /* Resources */,
+				94A15B77BBACD34CD527A3F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ImageGeneratorIA;
+			packageProductDependencies = (
+				CEC8A1A42A16732700B82A88 /* OpenAISwift */,
+			);
 			productName = ImageGeneratorIA;
 			productReference = CEC8A1682A16645B00B82A88 /* ImageGeneratorIA.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC8A1952A16645F00B82A88 /* Build configuration list for PBXNativeTarget "ImageGeneratorIATests" */;
 			buildPhases = (
+				4704056DEF868E204852CCBA /* [CP] Check Pods Manifest.lock */,
 				CEC8A17A2A16645F00B82A88 /* Sources */,
 				CEC8A17B2A16645F00B82A88 /* Frameworks */,
 				CEC8A17C2A16645F00B82A88 /* Resources */,
@@ -207,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC8A1982A16645F00B82A88 /* Build configuration list for PBXNativeTarget "ImageGeneratorIAUITests" */;
 			buildPhases = (
+				BEF1C18209F8AE2F8E0BF2FE /* [CP] Check Pods Manifest.lock */,
 				CEC8A1842A16645F00B82A88 /* Sources */,
 				CEC8A1852A16645F00B82A88 /* Frameworks */,
 				CEC8A1862A16645F00B82A88 /* Resources */,
+				CC3EBBC1B78B3467602ECCB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +304,9 @@
 				Base,
 			);
 			mainGroup = CEC8A15F2A16645B00B82A88;
+			packageReferences = (
+				CEC8A1A32A16732700B82A88 /* XCRemoteSwiftPackageReference "OpenAISwift.git" */,
+			);
 			productRefGroup = CEC8A1692A16645B00B82A88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,6 +344,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4704056DEF868E204852CCBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGeneratorIATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A15B77BBACD34CD527A3F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA/Pods-ImageGeneratorIA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA/Pods-ImageGeneratorIA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA/Pods-ImageGeneratorIA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF1C18209F8AE2F8E0BF2FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGeneratorIA-ImageGeneratorIAUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0218C4AE5F36F8105155779 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGeneratorIA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3EBBC1B78B3467602ECCB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC8A1642A16645B00B82A88 /* Sources */ = {
@@ -472,6 +629,7 @@
 		};
 		CEC8A1932A16645F00B82A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C518651828883EA1BCE0F6C /* Pods-ImageGeneratorIA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +659,7 @@
 		};
 		CEC8A1942A16645F00B82A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639735B010B4DA306AA0F852 /* Pods-ImageGeneratorIA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -530,6 +689,7 @@
 		};
 		CEC8A1962A16645F00B82A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47266EC25FC1240BA2AE6747 /* Pods-ImageGeneratorIATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +710,7 @@
 		};
 		CEC8A1972A16645F00B82A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D02C503A08B2F9A8D752B39 /* Pods-ImageGeneratorIATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +731,7 @@
 		};
 		CEC8A1992A16645F00B82A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA6309C815883E1517EBDCA /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -588,6 +750,7 @@
 		};
 		CEC8A19A2A16645F00B82A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F75173EEC9AF56CE5737BE9 /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +807,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEC8A1A32A16732700B82A88 /* XCRemoteSwiftPackageReference "OpenAISwift.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEC8A1A42A16732700B82A88 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC8A1A32A16732700B82A88 /* XCRemoteSwiftPackageReference "OpenAISwift.git" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC8A1602A16645B00B82A88 /* Project object */;
 }

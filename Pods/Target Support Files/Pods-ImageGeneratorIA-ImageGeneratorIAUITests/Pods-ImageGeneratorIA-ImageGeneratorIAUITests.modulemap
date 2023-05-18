@@ -1,0 +1,6 @@
+framework module Pods_ImageGeneratorIA_ImageGeneratorIAUITests {
+  umbrella header "Pods-ImageGeneratorIA-ImageGeneratorIAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

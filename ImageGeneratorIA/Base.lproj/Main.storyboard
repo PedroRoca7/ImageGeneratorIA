@@ -31,6 +31,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gerar Imagem"/>
+                                <connections>
+                                    <action selector="generateImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIa-Sx-O3d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +51,11 @@
                             <constraint firstItem="hW8-dq-USz" firstAttribute="top" secondItem="URZ-kf-ZRf" secondAttribute="bottom" constant="20" id="kb5-Fh-vRc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionImageTextField" destination="hW8-dq-USz" id="uK4-uX-AE5"/>
+                        <outlet property="generateImageButton" destination="90g-Wk-ECd" id="Jcg-yb-6De"/>
+                        <outlet property="generatedImageView" destination="URZ-kf-ZRf" id="vdD-xG-2DJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
