@@ -16,7 +16,6 @@ case apiError(Error)
 class API {
     
     static let authToken: String = "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"
-    var openAIModelType: OpenAIModelType = .gpt3(.davinci)
     var token: OpenAISwift = OpenAISwift(authToken: authToken)
     
     func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void) {
