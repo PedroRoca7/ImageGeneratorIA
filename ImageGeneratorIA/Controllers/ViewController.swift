@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loadingActivity: UIActivityIndicatorView!
     @IBOutlet weak var aguardandoImageLabel: UILabel!
     @IBOutlet weak var bottomConstrain: NSLayoutConstraint!
+    @IBOutlet weak var downloadButton: UIButton!
     
     var generator = GeneratorImageManager()
     let pinkColor = UIColor(red: 230, green: 0, blue: 126, alpha: 1)
@@ -24,7 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         descriptionImageTextField.delegate = self
-        loadingActivity.isHidden = true
+        self.generator.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -76,29 +77,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
             generateImageButton.backgroundColor = .darkGray
         }
     }
+    @IBAction func saveImage(_ sender: Any) {
+        generator.saveImageToGallery(imageView: generatedImageView)
+    }
     
     @IBAction func generateImage(_ sender: Any) {
         guard let text = descriptionImageTextField.text else { return }
+        generatedImageView.isHidden = true
         aguardandoImageLabel.isHidden = true
+        downloadButton.isHidden = true
         loadingActivity.isHidden = false
         descriptionImageTextField.resignFirstResponder()
         descriptionImageTextField.text = ""
         generateImageButton.backgroundColor = .darkGray
-        generator.requestImage(text: text) { result in
-            DispatchQueue.main.async {
-                self.loadingActivity.isHidden = true
-                if result == true {
-                    guard let image = self.generator.url else { return }
-                    if let url = URL(string: image){
-                        self.generatedImageView.kf.indicatorType = .activity
-                        self.generatedImageView.kf.setImage(with: url)
-                    }
-                } else {
-                    self.generatedImageView.image = nil
-                    print("Erro")
-                }
-            }
-        }
+        generator.requestImage(text: text)
     }
 }
 

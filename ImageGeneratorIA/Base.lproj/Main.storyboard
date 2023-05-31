@@ -45,8 +45,9 @@
                                     <action selector="generateImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIa-Sx-O3d"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iY1-6X-yac">
-                                <rect key="frame" x="197" y="353" width="20" height="20"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="iY1-6X-yac">
+                                <rect key="frame" x="188.5" y="344.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aguardando gerar Imagem..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncD-gq-n74">
                                 <rect key="frame" x="72" y="349.5" width="270" height="27"/>
@@ -54,6 +55,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-z7-qo6">
+                                <rect key="frame" x="354" y="69" width="50" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="jZp-XB-rQg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icloud.and.arrow.down.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yM1-Sl-Ygg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.066666666666666666" green="0.082352941176470587" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,10 +80,13 @@
                             <constraint firstItem="ncD-gq-n74" firstAttribute="centerX" secondItem="URZ-kf-ZRf" secondAttribute="centerX" id="K3q-hq-pLk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="90g-Wk-ECd" secondAttribute="bottom" constant="75" identifier="bottomConstrain" id="MZx-ix-2CA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="URZ-kf-ZRf" secondAttribute="trailing" id="Q17-5A-z05"/>
+                            <constraint firstItem="yxd-z7-qo6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="UFt-a6-mLe"/>
+                            <constraint firstItem="yxd-z7-qo6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Ve1-om-Wuq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hW8-dq-USz" secondAttribute="trailing" constant="25" id="YKM-Mf-yE6"/>
                             <constraint firstItem="iY1-6X-yac" firstAttribute="centerY" secondItem="URZ-kf-ZRf" secondAttribute="centerY" id="eX6-92-Thx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="90g-Wk-ECd" secondAttribute="trailing" constant="45" id="iNo-Uy-SeZ"/>
                             <constraint firstItem="hW8-dq-USz" firstAttribute="top" secondItem="URZ-kf-ZRf" secondAttribute="bottom" constant="20" id="kb5-Fh-vRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yxd-z7-qo6" secondAttribute="trailing" constant="10" id="l7S-gx-vEd"/>
                             <constraint firstItem="iY1-6X-yac" firstAttribute="centerX" secondItem="URZ-kf-ZRf" secondAttribute="centerX" id="qX7-wy-m0O"/>
                         </constraints>
                     </view>
@@ -78,6 +94,7 @@
                         <outlet property="aguardandoImageLabel" destination="ncD-gq-n74" id="dow-60-vNb"/>
                         <outlet property="bottomConstrain" destination="MZx-ix-2CA" id="9by-B5-Pxn"/>
                         <outlet property="descriptionImageTextField" destination="hW8-dq-USz" id="uK4-uX-AE5"/>
+                        <outlet property="downloadButton" destination="yxd-z7-qo6" id="hQp-7O-ugA"/>
                         <outlet property="generateImageButton" destination="90g-Wk-ECd" id="Jcg-yb-6De"/>
                         <outlet property="generatedImageView" destination="URZ-kf-ZRf" id="vdD-xG-2DJ"/>
                         <outlet property="loadingActivity" destination="iY1-6X-yac" id="JmQ-aZ-IgJ"/>
@@ -88,4 +105,7 @@
             <point key="canvasLocation" x="30" y="55"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icloud.and.arrow.down.fill" catalog="system" width="128" height="112"/>
+    </resources>
 </document>
