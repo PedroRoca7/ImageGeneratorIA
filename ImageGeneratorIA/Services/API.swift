@@ -15,10 +15,10 @@ case apiError(Error)
 
 class API {
     
-    static let authToken: String = "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"
-    var token: OpenAISwift = OpenAISwift(authToken: authToken)
+    private static let authToken: String = ProcessInfo.processInfo.environment["authToken"] ?? ""
+    private var token: OpenAISwift = OpenAISwift(authToken: authToken)
     
-    func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void) {
+    public func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void) {
         token.sendImages(with: text, numImages: 1, size: .size1024) { result in
             switch result {
             case .success(let success):

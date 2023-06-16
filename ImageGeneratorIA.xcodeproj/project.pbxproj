@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		9BBA433382BDB9A194A7CF8E /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C62096357B780D37EF3A3 /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework */; };
 		CE48D2DB4ED7D33EA48087F4 /* Pods_ImageGeneratorIATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7A4819BF045468AD5DD4C2 /* Pods_ImageGeneratorIATests.framework */; };
-		CE5C373D2A27C5EB000DF6AB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C373C2A27C5EA000DF6AB /* Extension.swift */; };
 		CEC8A16C2A16645B00B82A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */; };
 		CEC8A16E2A16645B00B82A88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */; };
-		CEC8A1702A16645B00B82A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16F2A16645B00B82A88 /* ViewController.swift */; };
+		CEC8A1702A16645B00B82A88 /* GenerateImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A16F2A16645B00B82A88 /* GenerateImageViewController.swift */; };
 		CEC8A1732A16645B00B82A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC8A1712A16645B00B82A88 /* Main.storyboard */; };
 		CEC8A1752A16645F00B82A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC8A1742A16645F00B82A88 /* Assets.xcassets */; };
 		CEC8A1782A16645F00B82A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC8A1762A16645F00B82A88 /* LaunchScreen.storyboard */; };
@@ -20,7 +19,7 @@
 		CEC8A18D2A16645F00B82A88 /* ImageGeneratorIAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A18C2A16645F00B82A88 /* ImageGeneratorIAUITests.swift */; };
 		CEC8A18F2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */; };
 		CEC8A1A02A16670A00B82A88 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A19F2A16670A00B82A88 /* API.swift */; };
-		CEC8A1A22A16674300B82A88 /* GeneratorImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */; };
+		CEC8A1A22A16674300B82A88 /* GeneratorImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1A12A16674300B82A88 /* GeneratorImageViewModel.swift */; };
 		CEC8A1A52A16732700B82A88 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEC8A1A42A16732700B82A88 /* OpenAISwift */; };
 		FD5974EAD433ADFF1AAFC631 /* Pods_ImageGeneratorIA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */; };
 /* End PBXBuildFile section */
@@ -52,11 +51,10 @@
 		853C62096357B780D37EF3A3 /* Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGeneratorIA_ImageGeneratorIAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F75173EEC9AF56CE5737BE9 /* Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageGeneratorIA-ImageGeneratorIAUITests/Pods-ImageGeneratorIA-ImageGeneratorIAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGeneratorIA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5C373C2A27C5EA000DF6AB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CEC8A1682A16645B00B82A88 /* ImageGeneratorIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGeneratorIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8A16B2A16645B00B82A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC8A16D2A16645B00B82A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEC8A16F2A16645B00B82A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC8A16F2A16645B00B82A88 /* GenerateImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewController.swift; sourceTree = "<group>"; };
 		CEC8A1722A16645B00B82A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC8A1742A16645F00B82A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC8A1772A16645F00B82A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +65,7 @@
 		CEC8A18C2A16645F00B82A88 /* ImageGeneratorIAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorIAUITests.swift; sourceTree = "<group>"; };
 		CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEC8A19F2A16670A00B82A88 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorImageManager.swift; sourceTree = "<group>"; };
+		CEC8A1A12A16674300B82A88 /* GeneratorImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,14 +120,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE5C37392A27C5B4000DF6AB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CE5C373C2A27C5EA000DF6AB /* Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		CEC8A15F2A16645B00B82A88 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +145,6 @@
 		CEC8A16A2A16645B00B82A88 /* ImageGeneratorIA */ = {
 			isa = PBXGroup;
 			children = (
-				CE5C37392A27C5B4000DF6AB /* Extensions */,
 				CEC8A19E2A1666F800B82A88 /* Services */,
 				CEC8A19D2A1666F000B82A88 /* ViewModel */,
 				CEC8A19C2A1666CE00B82A88 /* Controllers */,
@@ -197,7 +186,7 @@
 		CEC8A19C2A1666CE00B82A88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CEC8A16F2A16645B00B82A88 /* ViewController.swift */,
+				CEC8A16F2A16645B00B82A88 /* GenerateImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,7 +194,7 @@
 		CEC8A19D2A1666F000B82A88 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CEC8A1A12A16674300B82A88 /* GeneratorImageManager.swift */,
+				CEC8A1A12A16674300B82A88 /* GeneratorImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -463,12 +452,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC8A1702A16645B00B82A88 /* ViewController.swift in Sources */,
+				CEC8A1702A16645B00B82A88 /* GenerateImageViewController.swift in Sources */,
 				CEC8A16C2A16645B00B82A88 /* AppDelegate.swift in Sources */,
 				CEC8A1A02A16670A00B82A88 /* API.swift in Sources */,
-				CE5C373D2A27C5EB000DF6AB /* Extension.swift in Sources */,
 				CEC8A16E2A16645B00B82A88 /* SceneDelegate.swift in Sources */,
-				CEC8A1A22A16674300B82A88 /* GeneratorImageManager.swift in Sources */,
+				CEC8A1A22A16674300B82A88 /* GeneratorImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

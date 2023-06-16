@@ -8,17 +8,17 @@
 import Foundation
 import UIKit
 
-protocol GeneratorImageManagerProtocol: AnyObject {
+protocol GeneratorImageViewModelProtocol: AnyObject {
     func success()
     func failure()
     func confirmationAlert()
 }
 
-class GeneratorImageManager {
+class GeneratorImageViewModel {
     
     let api: API = API()
     var url: String?
-    weak var delegate: GeneratorImageManagerProtocol?
+    weak var delegate: GeneratorImageViewModelProtocol?
     
     func requestImage(text: String) -> Void {
         api.sendOpenAIRequest(text: text) { result in
