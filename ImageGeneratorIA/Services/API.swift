@@ -15,7 +15,7 @@ case apiError(Error)
 
 class API {
     
-    private static let authToken: String = ProcessInfo.processInfo.environment["authToken"] ?? ""
+    private static let authToken: String = "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"
     private var token: OpenAISwift = OpenAISwift(authToken: authToken)
     
     public func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void) {
