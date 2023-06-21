@@ -8,12 +8,16 @@
 import Foundation
 import OpenAISwift
 
+protocol APIProtocol {
+    func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void)
+}
+
 enum OpenAIError: Error {
 case missingChoicesText
 case apiError(Error)
 }
 
-class API {
+class API: APIProtocol {
     
     private static let authToken: String = "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"
     private var token: OpenAISwift = OpenAISwift(authToken: authToken)

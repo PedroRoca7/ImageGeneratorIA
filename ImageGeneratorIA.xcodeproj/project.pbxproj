@@ -21,6 +21,7 @@
 		CEC8A1A02A16670A00B82A88 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A19F2A16670A00B82A88 /* API.swift */; };
 		CEC8A1A22A16674300B82A88 /* GeneratorImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8A1A12A16674300B82A88 /* GeneratorImageViewModel.swift */; };
 		CEC8A1A52A16732700B82A88 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEC8A1A42A16732700B82A88 /* OpenAISwift */; };
+		CECE29142A437996006D8170 /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE29132A437996006D8170 /* APIMock.swift */; };
 		FD5974EAD433ADFF1AAFC631 /* Pods_ImageGeneratorIA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90343C182A0E41B258444B6A /* Pods_ImageGeneratorIA.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		CEC8A18E2A16645F00B82A88 /* ImageGeneratorIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEC8A19F2A16670A00B82A88 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CEC8A1A12A16674300B82A88 /* GeneratorImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorImageViewModel.swift; sourceTree = "<group>"; };
+		CECE29132A437996006D8170 /* APIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC8A1822A16645F00B82A88 /* ImageGeneratorIATests.swift */,
+				CECE29132A437996006D8170 /* APIMock.swift */,
 			);
 			path = ImageGeneratorIATests;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECE29142A437996006D8170 /* APIMock.swift in Sources */,
 				CEC8A1832A16645F00B82A88 /* ImageGeneratorIATests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,7 +714,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96BGR9J6TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroroca.ImageGeneratorIATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -731,7 +735,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96BGR9J6TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroroca.ImageGeneratorIATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -751,6 +755,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96BGR9J6TU;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroroca.ImageGeneratorIAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -770,6 +775,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96BGR9J6TU;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedroroca.ImageGeneratorIAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

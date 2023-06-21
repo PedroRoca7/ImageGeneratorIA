@@ -16,8 +16,9 @@ protocol GeneratorImageViewModelProtocol: AnyObject {
 
 class GeneratorImageViewModel {
     
-    let api: API = API()
+    var api: APIProtocol = API()
     var url: String?
+    var testApiMock: String?
     weak var delegate: GeneratorImageViewModelProtocol?
     
     func requestImage(text: String) -> Void {
@@ -26,8 +27,10 @@ class GeneratorImageViewModel {
             case .success(let imageUrl):
                 self.url = imageUrl
                 self.delegate?.success()
+                self.testApiMock = "Ok"
             case .failure(let error):
                 self.delegate?.failure()
+                self.testApiMock = "Erro"
                 print(error)
             }
         }
