@@ -18,8 +18,8 @@ case apiError(Error)
 }
 
 class API: APIProtocol {
-    
-    private static let authToken: String = "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"
+    #warning("Coloque sua chave privada da OpenAI na variavel authToken")
+    private static let authToken: String = ""
     private var token: OpenAISwift = OpenAISwift(authToken: authToken)
     
     public func sendOpenAIRequest(text: String, completion: @escaping (Result<String, OpenAIError>) -> Void) {
