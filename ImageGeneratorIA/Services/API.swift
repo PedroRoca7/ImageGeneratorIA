@@ -23,7 +23,7 @@ class API: APIProtocol {
     private static let authToken: String = ""
 =======
     
-    private static let authToken: String = "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"
+    private static let authToken: String = ""
 >>>>>>> Stashed changes
     private var token: OpenAISwift = OpenAISwift(authToken: authToken)
     
