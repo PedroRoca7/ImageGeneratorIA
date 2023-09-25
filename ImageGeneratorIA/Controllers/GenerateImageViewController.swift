@@ -110,8 +110,11 @@ extension GenerateImageViewController: GeneratorImageViewModelProtocol {
     }
     
     func failure() {
-        self.generatedImageView.image = nil
-        print("Erro")
+        DispatchQueue.main.async {
+            self.generatedImageView.image = nil
+            print("Erro")
+        }
+        
     }
     
     func confirmationAlert() {
